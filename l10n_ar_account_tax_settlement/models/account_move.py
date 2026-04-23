@@ -14,7 +14,8 @@ class AccountMove(models.Model):
     def action_download_vat_differences_csv(self):
         """Acción para descargar CSV con diferencias de IVA"""
         try:
-            handler = self.env['l10n_ar.tax.report.handler']
+            #handler = self.env['l10n_ar.tax.report.handler']
+            handler = False
             vat_differences_data = handler._check_invoices(self)
 
             if not vat_differences_data:
