@@ -8,7 +8,7 @@ from odoo.tools.float_utils import float_round
 
 
 class ArgentinianReportCustomHandler(models.AbstractModel):
-    __inherit = "l10n_ar.tax.report.handler.test"
+    _name = "modelo.temporal.falso"
 
     def _check_invoices(self, invoices):
         l10n_ar_vat_afip_code = {
